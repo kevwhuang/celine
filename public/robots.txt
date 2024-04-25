@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: 
-Sitemap: 
+Sitemap: https://ak-celine.netlify.app/sitemap.xml

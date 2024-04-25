@@ -1,7 +1,7 @@
-# Vite
+# Celine's Beauty Studio
 
-Contributors: 
+Contributors: Kevin Huang
 
-Version: 
+Version: 1.0.0
 
-Date: 
+Date: May 1, 2024
