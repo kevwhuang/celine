@@ -1,0 +1,57 @@
+{
+    "name": "vite",
+    "version": "0.0.0",
+    "description": "",
+    "keywords": [],
+    "homepage": "",
+    "bugs": {
+        "url": "https://github.com"
+    },
+    "license": "UNLICENSED",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com"
+    },
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "eslint": "eslint",
+        "fe": "ntl dev",
+        "test": "vitest",
+        "tslint": "tsc"
+    },
+    "dependencies": {
+        "@iconify/react": "*",
+        "@netlify/functions": "*",
+        "axios": "*",
+        "react": "*",
+        "react-dom": "*",
+        "react-helmet-async": "*",
+        "react-hot-toast": "*",
+        "react-router-dom": "*",
+        "swr": "*",
+        "uuid": "*",
+        "zustand": "*"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "*",
+        "@testing-library/react": "*",
+        "@types/react": "*",
+        "@types/react-dom": "*",
+        "@types/react-router-dom": "*",
+        "@types/uuid": "*",
+        "@typescript-eslint/eslint-plugin": "*",
+        "@typescript-eslint/parser": "*",
+        "@vitejs/plugin-react-swc": "*",
+        "autoprefixer": "*",
+        "eslint": "*",
+        "jsdom": "*",
+        "sass": "*",
+        "typescript": "*",
+        "vite": "*",
+        "vite-plugin-pwa": "*",
+        "vitest": "*"
+    },
+    "private": true
+}
