@@ -1,8 +1,10 @@
 {
     "name": "celine",
     "version": "1.0.0",
-    "description": "",
-    "keywords": [],
+    "description": "Celine's Beauty Studio",
+    "keywords": [
+        "beauty"
+    ],
     "homepage": "https://ak-celine.netlify.app",
     "bugs": {
         "url": "https://github.com/kevwhuang/celine/issues"
@@ -28,7 +30,6 @@
         "react": "*",
         "react-dom": "*",
         "react-helmet-async": "*",
-        "react-hot-toast": "*",
         "react-router-dom": "*",
         "swr": "*",
         "uuid": "*",

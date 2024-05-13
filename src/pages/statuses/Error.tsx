@@ -1,10 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 import '../../styles/statuses/Error.scss';
 
 function Error(): React.ReactElement {
     return (
         <main id="error">
+            <Helmet>
+                <title>Error</title>
+            </Helmet>
         </main>
     );
 }

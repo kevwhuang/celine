@@ -1,28 +1,92 @@
 @use '_root' as *;
 
 :root {
-    --color-1: #1b2635;
-    --color-2: #233044;
-    --color-3: #407ad6;
-    --color-4: #478e3d;
-    --color-5: #f3f4f5;
-    --color-6: #898e96;
-    --font-1: 10.67px;
-    --font-2: 16px;
-    --font-3: 24px;
-    --font-4: 36px;
-    --font-5: 54px;
-    --font-6: 81px;
+    --color-bg-1: #f8f4e9;
+    --color-bg-2: #fffcf2;
+    --color-text-1: #080606;
+    --color-text-1u: #666666;
+    --color-text-2: #ffffff;
+    --color-text-2u: #f0f0f0;
+    --font-1: 16px;
+    --font-2: 24px;
+    --font-3: 40px;
+    --font-4: 48px;
+    --space-gutter: 16px;
+    --space-margin: 48px;
+    --space-vertical: 200px;
+}
+
+a {
+    color: $color-text-1u;
+    text-align: center;
+    transition: .5s;
+
+    &:visited {
+        color: $color-text-1u;
+    }
+
+    &:hover {
+        color: $color-text-1;
+    }
+
+    svg {
+        margin-left: 4px;
+        width: 12px;
+
+        path {
+            fill: currentColor;
+
+            &:hover {
+                fill: currentColor;
+            }
+        }
+    }
+}
+
+button {
+    border: none;
+    outline: 1px solid $color-text-1u;
+    text-transform: uppercase;
+
+    &:hover {
+        outline-color: $color-text-1;
+    }
+}
+
+h1 {
+    font-family: Trirong, Garamond, serif;
+    font-size: $font-4;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: Trirong, Garamond, serif;
+    font-size: $font-3;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: Trirong, Garamond, serif;
+    font-size: $font-2;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: Trirong, Garamond, serif;
+    font-size: $font-3;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: $font-1;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 html {
-    background: $color-1;
-    color: $color-5;
-    font-family:
-        'SF Pro Display',
-        'Helvetica Neue',
-        'sans-serif',
-    ;
+    background: $color-bg-1;
+    color: $color-text-1;
+    font-family: 'Sofia Sans', 'Helvetica Neue', sans-serif;
 }
 
 img {

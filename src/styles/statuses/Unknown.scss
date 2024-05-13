@@ -1,5 +1,5 @@
 @use '../_root' as *;
 
 #unknown {
-    display: 100dvh;
+    min-height: calc(100dvh - 120px);
 }

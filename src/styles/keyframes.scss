@@ -1,1 +1,11 @@
 @use '_root' as *;
+
+@keyframes fade-in {
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+}

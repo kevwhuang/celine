@@ -10,18 +10,20 @@ import {
 } from 'vite';
 
 const manifest: Partial<ManifestOptions> = {
-    background_color: '#000000',
-    description: '',
+    background_color: '#f8f4e9',
+    description: 'Celine\'s Beauty Studio',
     dir: 'ltr',
     display: 'standalone',
     lang: 'en',
-    name: 'vite',
+    name: 'celine',
     orientation: 'any',
     scope: '/',
     short_name: 'vite',
     start_url: '/',
-    theme_color: '#000000',
-    categories: [],
+    theme_color: '#f8f4e9',
+    categories: [
+        'beauty',
+    ],
     icons: [
         {
             purpose: 'any',

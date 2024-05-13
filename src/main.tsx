@@ -11,7 +11,17 @@ import { SWRConfig } from 'swr';
 
 import Display from './layouts/Display';
 
+import Aftercare from './pages/Aftercare';
+import Bio from './pages/Bio';
+import Brows from './pages/Brows';
+import Disqualifications from './pages/Disqualifications';
+import FAQ from './pages/FAQ';
 import Home from './pages/Home';
+import Lips from './pages/Lips';
+import Policy from './pages/Policy';
+import Portfolio from './pages/Portfolio';
+import Pricing from './pages/Pricing';
+import Skin from './pages/Skin';
 
 import Error from './pages/statuses/Error';
 import Fallback from './pages/statuses/Fallback';
@@ -38,10 +48,20 @@ const config = {
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path="" element={<Display />} errorElement={<Error />}>
         <Route index element={<Home />} />
+        <Route path="*" element={<Unknown />} />
+        <Route path="aftercare" element={<Aftercare />} />
+        <Route path="bio" element={<Bio />} />
+        <Route path="brows" element={<Brows />} />
+        <Route path="disqualifications" element={<Disqualifications />} />
         <Route path="error" element={<Error />} />
         <Route path="fallback" element={<Fallback />} />
+        <Route path="faq" element={<FAQ />} />
         <Route path="home" element={<Navigate to="/" replace={true} />} />
-        <Route path="*" element={<Unknown />} />
+        <Route path="lips" element={<Lips />} />
+        <Route path="policy" element={<Policy />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="skin" element={<Skin />} />
     </Route>
 ));
 

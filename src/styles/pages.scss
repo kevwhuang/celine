@@ -1,5 +1,45 @@
 @use '_root' as *;
 
+#aftercare {
+    min-height: calc(100dvh - 120px);
+}
+
+#bio {
+    min-height: calc(100dvh - 120px);
+}
+
+#brows {
+    min-height: calc(100dvh - 120px);
+}
+
+#disqualifications {
+    min-height: calc(100dvh - 120px);
+}
+
+#faq {
+    min-height: calc(100dvh - 120px);
+}
+
 #home {
-    min-height: 100dvh;
+    min-height: calc(100dvh - 120px);
+}
+
+#lips {
+    min-height: calc(100dvh - 120px);
+}
+
+#policy {
+    min-height: calc(100dvh - 120px);
+}
+
+#portfolio {
+    min-height: calc(100dvh - 120px);
+}
+
+#pricing {
+    min-height: calc(100dvh - 120px);
+}
+
+#skin {
+    min-height: calc(100dvh - 120px);
 }

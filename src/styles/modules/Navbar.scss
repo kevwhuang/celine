@@ -1,0 +1,69 @@
+@use '../_root' as *;
+
+.navbar {
+    align-items: center;
+    background: $color-bg-2;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    height: 120px;
+    padding: 0 $space-margin;
+
+    .navbar__logo {
+        a {
+            align-items: center;
+            display: flex;
+            height: 120px;
+            padding: 0 calc($space-margin / 3);
+            width: max-content;
+
+            img {
+                height: 65%;
+                position: relative;
+                top: 5px;
+            }
+        }
+    }
+
+    .navbar__pages {
+        align-items: center;
+        display: flex;
+        justify-self: end;
+
+        a {
+            align-items: center;
+            display: flex;
+            padding: calc($space-margin / 3) calc($space-margin / 2);
+
+            &.pointer {
+                cursor: default;
+            }
+        }
+
+        .navbar__pages--menu1 {
+            div {
+                background: $color-bg-2;
+                position: absolute;
+                width: 187.88px;
+            }
+        }
+
+        .navbar__pages--menu2 {
+            div {
+                background: $color-bg-2;
+                position: absolute;
+                width: 161.48px;
+            }
+        }
+    }
+
+    .navbar__cta {
+        margin: 0 calc($space-margin / 2);
+
+        button {
+            a {
+                display: flex;
+                padding: calc($space-margin / 3) $space-margin;
+            }
+        }
+    }
+}

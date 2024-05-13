@@ -5,7 +5,7 @@ import typescriptParser from '@typescript-eslint/parser';
 
 const eslint = {
     files: ['src/**/*.{ts,tsx}'],
-    ignores: ['src/types/**'],
+    ignores: ['src/types/**', 'src/components/icons/**'],
     languageOptions: {
         parser: typescriptParser,
         ecmaVersion: 'latest',

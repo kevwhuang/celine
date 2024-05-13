@@ -1,14 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-function Home(): React.ReactElement {
+function FAQ(): React.ReactElement {
     return (
-        <main id="home">
+        <main id="faq">
             <Helmet>
-                <title>Celine's Beauty Studio</title>
+                <title>FAQ | Celine's Beauty Studio</title>
             </Helmet>
         </main>
     );
 }
 
-export default Home;
+export default FAQ;

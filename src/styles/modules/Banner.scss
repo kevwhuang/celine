@@ -1,0 +1,41 @@
+@use '../_root' as *;
+
+.banner {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+
+    .banner__gutter {
+        width: $font-4;
+    }
+
+    .banner__text {
+        p {
+            animation: fade-in 5s;
+            opacity: 0;
+            padding: 10px $space-margin;
+            text-align: center;
+        }
+    }
+
+    .banner__close {
+        align-items: center;
+        color: $color-text-1u;
+        cursor: pointer;
+        display: flex;
+        transition: .5s;
+
+        &:hover {
+            color: $color-text-1;
+        }
+
+        svg {
+            height: $font-1;
+            margin: 0 calc($space-margin / 3);
+            width: $font-1;
+
+            path {
+                fill: currentColor;
+            }
+        }
+    }
+}
