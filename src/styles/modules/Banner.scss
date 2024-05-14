@@ -5,14 +5,14 @@
     grid-template-columns: max-content 1fr max-content;
 
     .banner__gutter {
-        width: $font-4;
+        width: $space-3;
     }
 
     .banner__text {
         p {
             animation: fade-in 5s;
             opacity: 0;
-            padding: 10px $space-margin;
+            padding: 12px $space-3;
             text-align: center;
         }
     }
@@ -30,12 +30,8 @@
 
         svg {
             height: $font-1;
-            margin: 0 calc($space-margin / 3);
+            margin: 0 $space-1;
             width: $font-1;
-
-            path {
-                fill: currentColor;
-            }
         }
     }
 }

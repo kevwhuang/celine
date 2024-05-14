@@ -1,15 +1,16 @@
 import React from 'react';
 
 import IconActionClose from '../components/icons/IconActionClose';
+import texts from '../assets/texts.json';
 import '../styles/modules/Banner.scss';
 
-function Banner(): React.ReactElement {
-    function handleClose() {
-        const e = ref.current as unknown;
-        if (!(e instanceof HTMLElement)) return;
-        e.style.display = 'none';
-    }
+function close(ref: React.MutableRefObject<null>): void {
+    const e = ref.current as unknown;
+    if (!(e instanceof HTMLElement)) return;
+    e.style.display = 'none';
+}
 
+function Banner(): React.ReactElement {
     const [text, setText] = React.useState(0);
     const ref = React.useRef(null);
 
@@ -22,26 +23,10 @@ function Banner(): React.ReactElement {
         <aside className="banner" ref={ref}>
             <div className="banner__gutter" />
             <div className="banner__text">
-                {text === 0 &&
-                    <p>
-                        Lip and Brow Bundle:
-                        {'\u00A0'}
-                        <b>Save $250</b>
-                        {'\u00A0'}
-                        by getting your lips and brows done in the same session
-                    </p>
-                }
-                {text === 1 &&
-                    <p>
-                        Saline Tattoo Removal Bundle:
-                        {'\u00A0'}
-                        <b>Save $50</b>
-                        {'\u00A0'}
-                        by committing to 3 sessions
-                    </p>
-                }
+                {text === 0 && <p dangerouslySetInnerHTML={{ __html: texts.banner1 }} />}
+                {text === 1 && <p dangerouslySetInnerHTML={{ __html: texts.banner2 }} />}
             </div>
-            <div className="banner__close" onClick={handleClose}>
+            <div className="banner__close" onClick={() => close(ref)}>
                 <IconActionClose />
             </div>
         </aside>

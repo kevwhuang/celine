@@ -1,0 +1,53 @@
+@use '../../_root' as *;
+
+.hero {
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, .56), transparent),
+        url(../../../assets/hero.png);
+    background-position-y: 20%;
+    background-size: cover;
+    color: $color-text-2;
+    height: 760px;
+
+    .hero--container {
+        margin-left: $space-4;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 480px;
+
+        .hero__location {
+            margin-bottom: $space-2;
+        }
+
+        .hero__header {
+            margin-bottom: $space-2;
+        }
+
+        .hero__text {
+            margin-bottom: $space-2;
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .hero__cta {
+            width: max-content;
+
+            a {
+                align-items: center;
+                color: $color-text-2u;
+                display: flex;
+
+                &:visited {
+                    color: $color-text-2u;
+                }
+
+                &:hover {
+                    color: $color-text-2;
+                }
+            }
+        }
+    }
+}

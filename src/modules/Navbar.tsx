@@ -5,61 +5,70 @@ import IconArrowDown from '../components/icons/IconArrowDown';
 import logo from '../assets/logo.png';
 import '../styles/modules/Navbar.scss';
 
+function Menu1(): React.ReactElement {
+    return (
+        <div>
+            <Link to="brows">Brows</Link>
+            <Link to="lips">Lips</Link>
+            <Link to="skin">Skin</Link>
+            <Link to="pricing">Pricing</Link>
+        </div>
+    );
+}
+
+function Menu2(): React.ReactElement {
+    return (
+        <div>
+            <Link to="brows">Brows</Link>
+            <Link to="lips">Lips</Link>
+            <Link to="skin">Skin</Link>
+            <Link to="pricing">Pricing</Link>
+        </div>
+    );
+}
+
 function Navbar(): React.ReactElement {
-    function handleReset() {
-        setOpenMenu1(false);
-        setOpenMenu2(false);
+    function toggleMenus(state1: boolean, state2: boolean): void {
+        setOpenMenu1(state1);
+        setOpenMenu2(state2);
     }
 
     const [openMenu1, setOpenMenu1] = React.useState(false);
     const [openMenu2, setOpenMenu2] = React.useState(false);
 
     return (
-        <nav className="navbar" onMouseLeave={handleReset}>
-            <div className="navbar__logo" onMouseEnter={handleReset}>
+        <nav className="navbar" onMouseLeave={() => toggleMenus(false, false)}>
+            <div className="navbar__logo" onMouseEnter={() => toggleMenus(false, false)}>
                 <Link to="/">
                     <img src={logo} alt="Logo" />
                 </Link>
             </div>
             <div className="navbar__pages">
                 <div className="navbar__pages--menu1">
-                    <a
-                        className="pointer"
-                        onMouseEnter={() => { setOpenMenu1(true); setOpenMenu2(false); }}
-                    >
+                    <a className="pointer" onMouseEnter={() => toggleMenus(true, false)}>
                         Services & Pricing
                         <IconArrowDown />
                     </a>
-                    {openMenu1 &&
-                        <div>
-                            <Link to="brows">Brows</Link>
-                            <Link to="lips">Lips</Link>
-                            <Link to="skin">Skin</Link>
-                            <Link to="pricing">Pricing</Link>
-                        </div>
-                    }
+                    {openMenu1 && <Menu1 />}
                 </div>
-                <Link to="portfolio" onMouseEnter={handleReset}>Portfolio</Link>
+                <Link to="portfolio" onMouseEnter={() => toggleMenus(false, false)}>
+                    Portfolio
+                </Link>
                 <div className="navbar__pages--menu2">
-                    <a
-                        className="pointer"
-                        onMouseEnter={() => { setOpenMenu1(false); setOpenMenu2(true); }}
-                    >
+                    <a className="pointer" onMouseEnter={() => toggleMenus(false, true)}>
                         Getting Ready
                         <IconArrowDown />
                     </a>
-                    {openMenu2 &&
-                        <div>
-                            <Link to="policy">Studio Policy</Link>
-                            <Link to="disqualifications">Disqualifications</Link>
-                            <Link to="faq">FAQ</Link>
-                        </div>
-                    }
+                    {openMenu2 && <Menu2 />}
                 </div>
-                <Link to="aftercare" onMouseEnter={handleReset}>Aftercare</Link>
-                <Link to="bio" onMouseEnter={handleReset}>Artist Bio</Link>
+                <Link to="aftercare" onMouseEnter={() => toggleMenus(false, false)}>
+                    Aftercare
+                </Link>
+                <Link to="bio" onMouseEnter={() => toggleMenus(false, false)}>
+                    Artist Bio
+                </Link>
             </div>
-            <div className="navbar__cta" onMouseEnter={handleReset}>
+            <div className="navbar__cta" onMouseEnter={() => toggleMenus(false, false)}>
                 <button>
                     <a href="https://celinesbeautystudio.square.site">
                         Book A Service

@@ -6,13 +6,16 @@
     --color-text-1: #080606;
     --color-text-1u: #666666;
     --color-text-2: #ffffff;
-    --color-text-2u: #f0f0f0;
+    --color-text-2u: #ffffffa8;
     --font-1: 16px;
     --font-2: 24px;
     --font-3: 40px;
     --font-4: 48px;
+    --space-1: 16px;
+    --space-2: 24px;
+    --space-3: 48px;
+    --space-4: 72px;
     --space-gutter: 16px;
-    --space-margin: 48px;
     --space-vertical: 200px;
 }
 
@@ -29,16 +32,16 @@ a {
         color: $color-text-1;
     }
 
-    svg {
-        margin-left: 4px;
-        width: 12px;
+    &.cta {
+        span {
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-underline-offset: 6px;
+        }
 
-        path {
-            fill: currentColor;
-
-            &:hover {
-                fill: currentColor;
-            }
+        svg {
+            margin-left: 4px;
+            width: 20px;
         }
     }
 }
@@ -57,6 +60,7 @@ h1 {
     font-family: Trirong, Garamond, serif;
     font-size: $font-4;
     font-weight: 600;
+    line-height: $font-4;
 }
 
 h2 {
@@ -91,4 +95,14 @@ html {
 
 img {
     user-select: none;
+}
+
+svg {
+    path {
+        fill: currentColor;
+
+        &:hover {
+            fill: currentColor;
+        }
+    }
 }
