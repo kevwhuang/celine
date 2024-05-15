@@ -5,70 +5,69 @@
     background: $color-bg-2;
     display: grid;
     grid-template-columns: max-content 1fr max-content;
-    height: 120px;
-    padding: 0 $space-3;
+    padding: 0 $space-2;
 
-    .navbar__logo {
+    &__logo {
         a {
             align-items: center;
             display: flex;
             height: 120px;
             padding: 0 $space-1;
-            width: max-content;
 
             img {
                 height: 65%;
                 position: relative;
-                top: 5px;
+                top: 8px;
             }
         }
     }
 
-    .navbar__pages {
+    &__pages {
         align-items: center;
         display: flex;
         justify-self: end;
+
+        div {
+            &:nth-of-type(1) {
+                aside {
+                    background: $color-bg-2;
+                    position: absolute;
+                    width: 187.88px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                aside {
+                    background: $color-bg-2;
+                    position: absolute;
+                    width: 161.48px;
+                }
+            }
+
+            >a {
+                cursor: default;
+            }
+        }
 
         a {
             align-items: center;
             display: flex;
             padding: $space-1 $space-2;
 
-            &.pointer {
-                cursor: default;
-            }
-
             svg {
                 margin-left: 4px;
                 width: 12px;
             }
         }
-
-        .navbar__pages--menu1 {
-            div {
-                background: $color-bg-2;
-                position: absolute;
-                width: 187.88px;
-            }
-        }
-
-        .navbar__pages--menu2 {
-            div {
-                background: $color-bg-2;
-                position: absolute;
-                width: 161.48px;
-            }
-        }
     }
 
-    .navbar__cta {
+    &__cta {
         margin: 0 $space-2;
+    }
 
-        button {
-            a {
-                display: flex;
-                padding: $space-1 $space-3;
-            }
-        }
+    &__hamburger {
+        color: $color-text-1;
+        display: none;
+        justify-self: flex-end;
     }
 }

@@ -1,0 +1,17 @@
+@use '../_root' as *;
+
+.cta-button {
+    border: none;
+    display: flex;
+    outline: 1px solid $color-text-1a;
+    transition: outline-color .5s;
+
+    &:hover {
+        outline-color: $color-text-1;
+    }
+
+    a {
+        padding: $space-1 $space-2;
+        text-transform: uppercase;
+    }
+}

@@ -2,51 +2,54 @@
 
 .hero {
     background-image:
-        linear-gradient(to right, rgba(0, 0, 0, .56), transparent),
+        linear-gradient(to right, #0000008f, transparent),
         url(../../../assets/hero.png);
-    background-position-y: 20%;
+    background-position-y: 40%;
     background-size: cover;
     color: $color-text-2;
-    height: 760px;
+    height: clamp(760px, 45vw, 1000px);
+    transition: background-position 1s;
 
-    .hero--container {
+    &--container {
         margin-left: $space-4;
         position: relative;
         top: 50%;
-        transform: translateY(-50%);
+        translate: 0 -50%;
         width: 480px;
+    }
 
-        .hero__location {
-            margin-bottom: $space-2;
+    &__location {
+        margin-bottom: $space-1;
+    }
+
+    &__header {
+        margin-bottom: $space-2;
+
+        h1 {
+            line-height: $font-4;
         }
+    }
 
-        .hero__header {
-            margin-bottom: $space-2;
+    &__description {
+        margin-bottom: $space-3;
+
+        p {
+            font-size: 20px;
         }
+    }
 
-        .hero__text {
-            margin-bottom: $space-2;
+    &__cta {
+        width: max-content;
 
-            p {
-                font-size: 20px;
+        .cta-anchor {
+            color: $color-text-2a;
+
+            &:visited {
+                color: $color-text-2a;
             }
-        }
 
-        .hero__cta {
-            width: max-content;
-
-            a {
-                align-items: center;
-                color: $color-text-2u;
-                display: flex;
-
-                &:visited {
-                    color: $color-text-2u;
-                }
-
-                &:hover {
-                    color: $color-text-2;
-                }
+            &:hover {
+                color: $color-text-2;
             }
         }
     }

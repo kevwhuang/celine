@@ -1,6 +1,7 @@
 import React from 'react';
 
-import IconArrowRight from '../../components/icons/IconArrowRight';
+import CTAAnchor from '../../components/CTAAnchor';
+import links from '../../assets/links.json';
 import texts from '../../assets/texts.json';
 import '../../styles/modules/home/Hero.scss';
 
@@ -9,19 +10,16 @@ function Hero(): React.ReactElement {
         <section className="hero">
             <div className="hero--container">
                 <div className="hero__location">
-                    <h5>San Diego, CA</h5>
+                    <h5>{texts.heroLocation}</h5>
                 </div>
                 <div className="hero__header">
-                    <h1>Permanent Makeup for Brows and Lips</h1>
+                    <h1>{texts.heroHeader}</h1>
                 </div>
-                <div className="hero__text">
-                    <p>{texts.hero}</p>
+                <div className="hero__description">
+                    <p>{texts.heroDescription}</p>
                 </div>
                 <div className="hero__cta">
-                    <a className="cta" href="https://celinesbeautystudio.square.site">
-                        <span>Schedule a Free Consultation</span>
-                        <IconArrowRight />
-                    </a>
+                    <CTAAnchor href={links.bookings} text={texts.heroCTA} />
                 </div>
             </div>
         </section>

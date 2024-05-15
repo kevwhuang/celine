@@ -4,29 +4,24 @@
     display: grid;
     grid-template-columns: max-content 1fr max-content;
 
-    .banner__gutter {
+    &--gutter {
         width: $space-3;
     }
 
-    .banner__text {
+    &__text {
         p {
             animation: fade-in 5s;
             opacity: 0;
-            padding: 12px $space-3;
+            padding: 12px;
             text-align: center;
         }
     }
 
-    .banner__close {
+    &__close {
         align-items: center;
-        color: $color-text-1u;
+        color: $color-text-1;
         cursor: pointer;
         display: flex;
-        transition: .5s;
-
-        &:hover {
-            color: $color-text-1;
-        }
 
         svg {
             height: $font-1;

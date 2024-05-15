@@ -1,5 +1,3 @@
-'use strict';
-
 import globals from 'globals';
 import typescriptParser from '@typescript-eslint/parser';
 

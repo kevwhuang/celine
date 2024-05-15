@@ -1,0 +1,17 @@
+@use '../_root' as *;
+
+.cta-anchor {
+    align-items: center;
+    display: flex;
+
+    span {
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-underline-offset: 6px;
+    }
+
+    svg {
+        margin-left: 6px;
+        width: 12px;
+    }
+}
