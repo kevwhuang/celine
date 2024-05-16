@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import CTAButton from '../components/CTAButton';
 import IconArrowDown from '../components/icons/IconArrowDown';
 import links from '../assets/links.json';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.webp';
 import { Cross as Hamburger } from 'hamburger-react';
 import '../styles/modules/Navbar.scss';
 
