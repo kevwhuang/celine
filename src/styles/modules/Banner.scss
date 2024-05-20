@@ -1,6 +1,7 @@
 @use '../_root' as *;
 
 .banner {
+    background: $color-bg-1;
     display: grid;
     grid-template-columns: max-content 1fr max-content;
 

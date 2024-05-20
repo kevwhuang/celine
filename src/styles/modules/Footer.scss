@@ -2,5 +2,104 @@
 
 .footer {
     background: $color-bg-2;
-    height: 450px;
+    display: grid;
+    gap: 25px 100px;
+    grid-template-areas: 'resources location contact' 'resources hours info';
+    grid-template-columns: max-content max-content 1fr;
+    padding: 100px $space-3 $space-3;
+    transition: column-gap 1s;
+
+    h5 {
+        margin-bottom: $space-1;
+        text-transform: none;
+    }
+
+    &__resources {
+        display: flex;
+        flex-direction: column;
+        grid-area: resources;
+
+        a {
+            padding: 4px 0;
+            width: max-content;
+        }
+
+        &--gutter {
+            height: $font-2;
+            padding: 4px 0;
+        }
+    }
+
+    &__location {
+        grid-area: location;
+
+        p {
+            margin-bottom: 4px;
+        }
+
+        a {
+            width: max-content;
+        }
+    }
+
+    &__hours {
+        grid-area: hours;
+
+        td {
+            &:first-child {
+                padding-right: 30px;
+            }
+        }
+    }
+
+    &__contact {
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+        grid-area: contact;
+
+        h3 {
+            font-weight: 700;
+            margin-bottom: 4px;
+            transition: font-size 1s;
+        }
+
+        >a {
+            color: $color-text-1;
+            padding: 4px 0;
+
+            &:visited {
+                color: $color-text-1;
+            }
+        }
+
+        p {
+            padding: 4px 0;
+
+            a {
+                padding: 4px 0;
+            }
+
+            span {
+                font-weight: 600;
+                padding: 0 4px;
+            }
+        }
+    }
+
+    &__info {
+        align-items: end;
+        display: flex;
+        grid-area: info;
+        justify-content: end;
+
+        p {
+            text-align: right;
+
+            span {
+                font-weight: 600;
+                padding: 0 4px;
+            }
+        }
+    }
 }

@@ -9,6 +9,11 @@ function Fallback(): React.ReactElement {
             <Helmet>
                 <title>Fallback</title>
             </Helmet>
+            <section className="fallback">
+                <div className="fallback__header">
+                    <h1>Fallback</h1>
+                </div>
+            </section>
         </main>
     );
 }

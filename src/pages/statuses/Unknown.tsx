@@ -9,6 +9,11 @@ function Unknown(): React.ReactElement {
             <Helmet>
                 <title>Unknown</title>
             </Helmet>
+            <section className="unknown">
+                <div className="unknown__header">
+                    <h1>Unknown</h1>
+                </div>
+            </section>
         </main>
     );
 }

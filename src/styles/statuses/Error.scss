@@ -1,3 +1,15 @@
 @use '../_root' as *;
 
-#error {}
+.error {
+    align-items: center;
+    background: $color-bg-2;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100dvh - 120px - 120px);
+
+    &__header {
+        h1 {
+            text-transform: uppercase;
+        }
+    }
+}

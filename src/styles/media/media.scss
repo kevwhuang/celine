@@ -10,13 +10,13 @@
 @media screen and (min-width: 2560px) {}
 
 @media screen and (max-width: 1920px) {
-    .hero {
+    #home .hero {
         background-position-y: 30%;
     }
 }
 
 @media screen and (max-width: 1600px) {
-    .hero {
+    #home .hero {
         background-position-y: 20%;
     }
 }
@@ -38,7 +38,17 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .hero {
+    .footer {
+        column-gap: 5%;
+
+        &__contact {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    #home .hero {
         background-position-x: 60%;
     }
 }

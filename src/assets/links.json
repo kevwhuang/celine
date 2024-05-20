@@ -1,3 +1,7 @@
 {
-    "bookings": "https://celinesbeautystudio.square.site"
+    "bookings": "https://celinesbeautystudio.square.site",
+    "directions": "https://google.com/maps/place/Celine's+Beauty+Studio/@32.8914404,-117.1494967,19z/data=!3m1!5s0x80dbf8b20f216f47:0x40d8f0a3a74aae4c!4m6!3m5!1s0x80dc01dcae7bf707:0x6f8ef4ed90642f8d!8m2!3d32.8911668!4d-117.1494323!16s%2Fg%2F11h8jf5d7r",
+    "facebook": "https://facebook.com/celinesbeautystudio",
+    "instagram": "https://instagram.com/celinesbeautystudio",
+    "yelp": "https://yelp.com/biz/celine-s-beauty-studio-san-diego"
 }

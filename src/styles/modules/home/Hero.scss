@@ -1,6 +1,6 @@
 @use '../../_root' as *;
 
-.hero {
+#home .hero {
     background-image:
         linear-gradient(to right, #0000008f, transparent),
         url(../../../assets/hero.webp);
@@ -50,6 +50,10 @@
 
             &:hover {
                 color: $color-text-2;
+            }
+
+            span {
+                text-underline-offset: 6px;
             }
         }
     }
