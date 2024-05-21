@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../styles/components/CTAButton.scss';
 
@@ -7,7 +8,7 @@ function Anchor(props: { href: string, text: string }): React.ReactElement {
 
     return (
         <button className="cta-button">
-            <a href={href}>{text}</a>
+            <Link to={href}>{text}</Link>
         </button>
     );
 }

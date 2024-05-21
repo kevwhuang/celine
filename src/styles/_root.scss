@@ -14,3 +14,7 @@ $space-3: var(--space-3);
 $space-4: var(--space-4);
 $space-gutter: var(--space-gutter);
 $space-vertical: var(--space-vertical);
+
+@mixin box-shadow {
+    box-shadow: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
+}

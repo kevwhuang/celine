@@ -5,7 +5,7 @@ import CTAButton from '../components/CTAButton';
 import Headroom from 'react-headroom';
 import IconArrowDown from '../components/icons/IconArrowDown';
 import links from '../assets/links.json';
-import logo from '../assets/logo.webp';
+import logo from '../assets/images/logo.webp';
 import { Cross as Hamburger } from 'hamburger-react';
 import '../styles/modules/Navbar.scss';
 

@@ -1,6 +1,51 @@
 @use '../../_root' as *;
 
 #home .bio {
-    background: $color-bg-1;
-    height: 100px;
+    display: grid;
+    gap: $space-3;
+    grid-template-columns: 9fr 16fr;
+    padding: $space-vertical 0 $space-vertical $space-3;
+
+    &--container {
+        align-self: end;
+        justify-self: end;
+        max-width: 500px;
+        min-width: 300px;
+    }
+
+    &__header {
+        h2 {
+            margin-bottom: $space-2;
+        }
+    }
+
+    &__text {
+        p {
+            &:first-child {
+                margin-bottom: $space-2;
+            }
+
+            &:last-child {
+                margin-bottom: $space-3;
+            }
+        }
+    }
+
+    &__cta {
+        a {
+            width: max-content;
+        }
+    }
+
+    &__image {
+        @include box-shadow;
+        border-radius: $space-1 4px 4px $space-1;
+        overflow: hidden;
+        width: fit-content;
+
+        img {
+            max-height: 700px;
+            transform: scaleX(-1);
+        }
+    }
 }

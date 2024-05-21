@@ -32,6 +32,7 @@
         "react-dom": "*",
         "react-headroom": "*",
         "react-helmet-async": "*",
+        "react-intersection-observer": "*",
         "react-router-dom": "*",
         "swr": "*",
         "uuid": "*",

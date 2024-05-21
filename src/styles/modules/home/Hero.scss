@@ -3,7 +3,7 @@
 #home .hero {
     background-image:
         linear-gradient(to right, #0000008f, transparent),
-        url(../../../assets/hero.webp);
+        url(../../../assets/images/hero.webp);
     background-position-y: 40%;
     background-size: cover;
     color: $color-text-2;
@@ -24,10 +24,6 @@
 
     &__header {
         margin-bottom: $space-2;
-
-        h1 {
-            line-height: $font-4;
-        }
     }
 
     &__description {

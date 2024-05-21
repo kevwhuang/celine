@@ -48,6 +48,26 @@
         }
     }
 
+    #home .bio {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 100px;
+        padding-right: $space-3;
+
+        &--container {
+            align-self: center;
+        }
+
+        &__image {
+            border-radius: 12px;
+            margin: auto;
+
+            img {
+                max-height: 600px;
+            }
+        }
+    }
+
     #home .hero {
         background-position-x: 60%;
     }
