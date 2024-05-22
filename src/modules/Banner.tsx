@@ -20,7 +20,6 @@ function Banner(): React.ReactElement {
 
     return (
         <section className="banner" ref={ref}>
-            <div className="banner--gutter" />
             <div className="banner__text">
                 {text === 0 && <p dangerouslySetInnerHTML={{ __html: texts.banner1 }} />}
                 {text === 1 && <p dangerouslySetInnerHTML={{ __html: texts.banner2 }} />}

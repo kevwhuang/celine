@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet-async';
 import '../../styles/statuses/Fallback.scss';
 
 function Fallback(): React.ReactElement {
+    scroll(0, 0);
+
     return (
         <main id="fallback">
             <Helmet>

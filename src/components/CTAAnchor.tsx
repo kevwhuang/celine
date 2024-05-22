@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import IconArrowRight from './icons/IconArrowRight';
 import '../styles/components/CTAAnchor.scss';
@@ -8,10 +8,10 @@ function Anchor(props: { href: string, text: string }): React.ReactElement {
     const { href, text } = props;
 
     return (
-        <Link className="cta-anchor" to={href}>
+        <HashLink className="cta-anchor" to={href}>
             <span>{text}</span>
             <IconArrowRight />
-        </Link>
+        </HashLink>
     );
 }
 

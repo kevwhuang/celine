@@ -2,7 +2,7 @@ import React from 'react';
 
 import CTAAnchor from '../../components/CTAAnchor';
 import Observer from '../../components/Observer';
-import celine from '../../assets/images/celine1.webp';
+import celine from '../../assets/images/home-celine.webp';
 import texts from '../../assets/texts.json';
 import '../../styles/modules/home/Bio.scss';
 

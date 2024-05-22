@@ -6,6 +6,7 @@ import Headroom from 'react-headroom';
 import IconArrowDown from '../components/icons/IconArrowDown';
 import links from '../assets/links.json';
 import logo from '../assets/images/logo.webp';
+import useZustand from '../hooks/useZustand';
 import { Cross as Hamburger } from 'hamburger-react';
 import '../styles/modules/Navbar.scss';
 
@@ -31,12 +32,13 @@ function Menu2(): React.ReactElement {
 }
 
 function Navbar(): React.ReactElement {
-    const [openHamburger, setOpenHamburger] = React.useState(false);
+    const openHamburger = useZustand(s => s.openHamburger);
+    const setOpenHamburger = useZustand(s => s.setOpenHamburger);
     const [openMenu1, setOpenMenu1] = React.useState(false);
     const [openMenu2, setOpenMenu2] = React.useState(false);
 
     return (
-        <Headroom pinStart={43}>
+        <Headroom pinStart={43} disable={openHamburger}>
             <nav className="navbar">
                 <div className="navbar__logo">
                     <Link to="/">

@@ -1,0 +1,12 @@
+@use '../_root' as *;
+
+.menu {
+    animation: fade-in .5s forwards;
+    background: $color-bg-2;
+    cursor: pointer;
+    height: 100dvh;
+    opacity: 0;
+    position: fixed;
+    width: 100dvw;
+    z-index: 1000;
+}

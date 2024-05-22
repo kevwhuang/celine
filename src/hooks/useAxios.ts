@@ -2,8 +2,8 @@ import axios, { type AxiosRequestConfig } from 'axios';
 import useSWR from 'swr';
 
 interface AxiosParams {
-    endpoint: string;
-    options?: AxiosRequestConfig;
+    endpoint: string,
+    options?: AxiosRequestConfig,
 }
 
 function useAxios(params: AxiosParams) {

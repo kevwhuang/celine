@@ -11,6 +11,8 @@ import Studio from '../modules/home/Studio';
 import Testimonials from '../modules/home/Testimonials';
 
 function Home(): React.ReactElement {
+    scroll(0, 0);
+
     return (
         <main id="home">
             <Helmet>

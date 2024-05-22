@@ -34,6 +34,7 @@
         "react-helmet-async": "*",
         "react-intersection-observer": "*",
         "react-router-dom": "*",
+        "react-router-hash-link": "*",
         "swr": "*",
         "uuid": "*",
         "zustand": "*"
@@ -44,6 +45,7 @@
         "@types/node": "*",
         "@types/react": "*",
         "@types/react-dom": "*",
+        "@types/react-router-hash-link": "*",
         "@types/react-headroom": "*",
         "@types/react-router-dom": "*",
         "@types/uuid": "*",

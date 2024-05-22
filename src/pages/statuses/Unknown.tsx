@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet-async';
 import '../../styles/statuses/Unknown.scss';
 
 function Unknown(): React.ReactElement {
+    scroll(0, 0);
+
     return (
         <main id="unknown">
             <Helmet>
