@@ -39,7 +39,7 @@
 
     &__image {
         @include box-shadow;
-        border-radius: $space-1 4px 4px $space-1;
+        border-radius: 4px;
         overflow: hidden;
         width: fit-content;
 

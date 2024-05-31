@@ -48,6 +48,27 @@
         }
     }
 
+    #brows .about {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 100px;
+        padding-right: $space-3;
+
+        &--container {
+            align-self: center;
+        }
+
+        &__image {
+            border-radius: 12px;
+            margin: auto;
+            transform: none;
+
+            img {
+                max-height: 500px;
+            }
+        }
+    }
+
     #home .bio {
         display: flex;
         flex-direction: column-reverse;

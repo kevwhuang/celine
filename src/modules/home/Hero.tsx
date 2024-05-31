@@ -9,16 +9,16 @@ function Hero(): React.ReactElement {
         <section className="hero">
             <div className="hero--container">
                 <div className="hero__location">
-                    <h5>{texts.heroLocation}</h5>
+                    <h5>{texts.homeHeroLocation}</h5>
                 </div>
                 <div className="hero__header">
-                    <h1>{texts.heroHeader}</h1>
+                    <h1>{texts.homeHeroHeader}</h1>
                 </div>
                 <div className="hero__description">
-                    <p>{texts.heroDescription}</p>
+                    <p>{texts.homeHeroDescription}</p>
                 </div>
                 <div className="hero__cta">
-                    <CTAAnchor href="bio#contact" text={texts.heroCTA} />
+                    <CTAAnchor href="bio#contact" text={texts.homeHeroCTA} />
                 </div>
             </div>
         </section>
