@@ -2,6 +2,6 @@
 
 Contributors: Kevin Huang, Ana Lee
 
-Version: 1.0.0
+Version: 0.2.0
 
-Date: July 1, 2024
+Date: August 8, 2024

@@ -1,8 +1,4 @@
-.env
-bun.lockb
-todo.txt
 **/.DS_Store
 .netlify/
-design/
 dist/
 node_modules/

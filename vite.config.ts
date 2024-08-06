@@ -18,7 +18,7 @@ const manifest: Partial<ManifestOptions> = {
     name: 'celine',
     orientation: 'any',
     scope: '/',
-    short_name: 'vite',
+    short_name: 'celine',
     start_url: '/',
     theme_color: '#f8f4e9',
     categories: [

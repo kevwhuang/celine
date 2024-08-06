@@ -34,7 +34,7 @@ const eslint = {
         'eol-last': 2,
         'eqeqeq': 2,
         'func-call-spacing': 2,
-        'func-style': [2, 'declaration', { 'allowArrowFunctions': true }],
+        'func-style': [2, 'declaration', { allowArrowFunctions: true }],
         'function-paren-newline': 0,
         'generator-star-spacing': 2,
         'id-length': 0,
