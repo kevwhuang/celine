@@ -1,9 +1,11 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 import CTAAnchor from '../components/CTAAnchor';
-import links from '../assets/links.json';
-import texts from '../assets/texts.json';
+
+import links from '../assets/texts/links.json';
+import texts from '../assets/texts/texts.json';
+
 import '../styles/modules/Footer.scss';
 
 function Footer(): React.ReactElement {
@@ -21,39 +23,48 @@ function Footer(): React.ReactElement {
                 <Link to="bio">Artist Bio</Link>
                 <Link to="portfolio">Portfolio</Link>
             </div>
+
             <div className="footer__location">
                 <h5>Location</h5>
                 <p dangerouslySetInnerHTML={{ __html: texts.footerLocation }} />
                 <CTAAnchor href={links.directions} text="Get Directions" />
             </div>
+
             <div className="footer__hours">
                 <h5>Hours</h5>
+
                 <table>
                     <tbody>
                         <tr>
                             <td>Monday</td>
                             <td>Closed</td>
                         </tr>
+
                         <tr>
                             <td>Tuesday</td>
                             <td>{texts.footerHours}</td>
                         </tr>
+
                         <tr>
                             <td>Wednesday</td>
                             <td>{texts.footerHours}</td>
                         </tr>
+
                         <tr>
                             <td>Thursday</td>
                             <td>{texts.footerHours}</td>
                         </tr>
+
                         <tr>
                             <td>Friday</td>
                             <td>{texts.footerHours}</td>
                         </tr>
+
                         <tr>
                             <td>Saturday</td>
                             <td>{texts.footerHours}</td>
                         </tr>
+
                         <tr>
                             <td>Sunday</td>
                             <td>Closed</td>
@@ -61,14 +72,18 @@ function Footer(): React.ReactElement {
                     </tbody>
                 </table>
             </div>
+
             <div className="footer__contact">
                 <h3>Celine's Beauty Studio</h3>
+
                 <a href={`tel:${texts.footerPhone.replace(' ', '')}`}>
                     {texts.footerPhone}
                 </a>
+
                 <a href={`mailto:${texts.footerEmail}`}>
                     {texts.footerEmail}
                 </a>
+
                 <p>
                     <a href={links.instagram}>Instagram</a>
                     <span> / </span>
@@ -77,6 +92,7 @@ function Footer(): React.ReactElement {
                     <a href={links.yelp}>Yelp</a>
                 </p>
             </div>
+
             <div className="footer__info">
                 <p dangerouslySetInnerHTML={{ __html: texts.footerInfo }} />
             </div>

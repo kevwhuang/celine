@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 
 import Bio from '../modules/home/Bio';
 import Clients from '../modules/home/Clients';
@@ -10,14 +9,14 @@ import Services from '../modules/home/Services';
 import Studio from '../modules/home/Studio';
 import Testimonials from '../modules/home/Testimonials';
 
+import '../styles/pages/Home.scss';
+
 function Home(): React.ReactElement {
     scroll(0, 0);
 
     return (
         <main id="home">
-            <Helmet>
-                <title>Celine's Beauty Studio</title>
-            </Helmet>
+            <title>Celine's Beauty Studio</title>
             <Hero />
             <Bio />
             <Services />

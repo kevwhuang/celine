@@ -4,8 +4,7 @@ import '../../styles/modules/home/Readiness.scss';
 
 function Readiness(): React.ReactElement {
     return (
-        <section className="readiness">
-        </section>
+        <section className="readiness" />
     );
 }
 

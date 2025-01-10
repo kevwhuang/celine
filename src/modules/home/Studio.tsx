@@ -4,8 +4,7 @@ import '../../styles/modules/home/Studio.scss';
 
 function Studio(): React.ReactElement {
     return (
-        <section className="studio">
-        </section>
+        <section className="studio" />
     );
 }
 

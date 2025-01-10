@@ -4,8 +4,7 @@ import '../../styles/modules/home/Portfolio.scss';
 
 function Portfolio(): React.ReactElement {
     return (
-        <section className="portfolio">
-        </section>
+        <section className="portfolio" />
     );
 }
 

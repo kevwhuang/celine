@@ -4,8 +4,7 @@ import '../../styles/modules/bio/About.scss';
 
 function About(): React.ReactElement {
     return (
-        <section className="about">
-        </section>
+        <section className="about" />
     );
 }
 

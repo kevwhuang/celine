@@ -4,8 +4,7 @@ import '../../styles/modules/home/Testimonials.scss';
 
 function Testimonials(): React.ReactElement {
     return (
-        <section className="testimonials">
-        </section>
+        <section className="testimonials" />
     );
 }
 

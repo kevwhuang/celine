@@ -2,17 +2,17 @@
 
 .navbar {
     align-items: center;
-    background: $color-bg-2;
+    background: $cbg2;
     display: grid;
     grid-template-columns: max-content 1fr max-content;
-    padding: 0 $space-2;
+    padding: 0 $s2;
 
     &__logo {
         a {
             align-items: center;
             display: flex;
             height: 120px;
-            padding: 0 $space-1;
+            padding: 0 $s1;
 
             img {
                 height: 65%;
@@ -37,7 +37,7 @@
             }
 
             aside {
-                background: $color-bg-2;
+                background: $cbg2;
                 position: absolute;
                 top: 60px;
                 width: 100%;
@@ -51,7 +51,7 @@
         a {
             align-items: center;
             display: flex;
-            padding: $space-1 $space-2;
+            padding: $s1 $s2;
 
             svg {
                 margin-left: 4px;
@@ -61,11 +61,11 @@
     }
 
     &__cta {
-        margin: 0 $space-2;
+        margin: 0 $s2;
     }
 
     &__hamburger {
-        color: $color-text-1;
+        color: $ct1;
         display: none;
         justify-self: flex-end;
     }

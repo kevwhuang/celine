@@ -1,14 +1,13 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+
+import '../styles/pages/Lips.scss';
 
 function Lips(): React.ReactElement {
     scroll(0, 0);
 
     return (
         <main id="lips">
-            <Helmet>
-                <title>Lips | Celine's Beauty Studio</title>
-            </Helmet>
+            <title>Lips | Celine's Beauty Studio</title>
         </main>
     );
 }

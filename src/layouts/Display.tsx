@@ -1,6 +1,5 @@
-import React from 'react';
-import { HelmetProvider } from 'react-helmet-async';
 import { Outlet } from 'react-router-dom';
+import React from 'react';
 
 import Banner from '../modules/Banner';
 import Footer from '../modules/Footer';
@@ -13,9 +12,7 @@ function Display(): React.ReactElement {
             <Menu />
             <Banner />
             <Navbar />
-            <HelmetProvider>
-                <Outlet />
-            </HelmetProvider>
+            <Outlet />
             <Footer />
         </>
     );

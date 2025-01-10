@@ -4,8 +4,7 @@ import '../../styles/modules/bio/Hero.scss';
 
 function Hero(): React.ReactElement {
     return (
-        <section className="hero">
-        </section>
+        <section className="hero" />
     );
 }
 

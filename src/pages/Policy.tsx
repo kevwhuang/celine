@@ -1,14 +1,13 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+
+import '../styles/pages/Policy.scss';
 
 function Policy(): React.ReactElement {
     scroll(0, 0);
 
     return (
         <main id="policy">
-            <Helmet>
-                <title>Policy | Celine's Beauty Studio</title>
-            </Helmet>
+            <title>Policy | Celine's Beauty Studio</title>
         </main>
     );
 }

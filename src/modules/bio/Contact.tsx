@@ -4,8 +4,7 @@ import '../../styles/modules/bio/Contact.scss';
 
 function Contact(): React.ReactElement {
     return (
-        <section id="contact" className="contact">
-        </section>
+        <section className="contact" id="contact" />
     );
 }
 

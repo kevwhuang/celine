@@ -1,0 +1,78 @@
+@use '_root' as *;
+
+:root {
+    --cbg1: #f8f4e9;
+    --cbg2: #fff;
+    --ct1: #080606;
+    --ct1a: #666;
+    --ct2: #fff;
+    --ct2a: #ffffffa8;
+    --f1: 16px;
+    --f2: 24px;
+    --f3: 40px;
+    --f4: 48px;
+    --s1: 16px;
+    --s2: 24px;
+    --s3: 48px;
+    --s4: 72px;
+    --sg: 16px;
+    --sv: 200px;
+}
+
+a {
+    color: $ct1a;
+    transition: color .5s;
+
+    &:visited {
+        color: $ct1a;
+    }
+
+    &:hover {
+        color: $ct1;
+    }
+}
+
+div {
+    transition: opacity 1s;
+}
+
+h1 {
+    font-family: Trirong, Garamond, serif;
+    font-size: $f4;
+    font-weight: 600;
+    line-height: $f4;
+}
+
+h2 {
+    font-family: Trirong, Garamond, serif;
+    font-size: $f3;
+    font-weight: 500;
+    line-height: $f3;
+}
+
+h3 {
+    font-family: Trirong, Garamond, serif;
+    font-size: $f2;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: Trirong, Garamond, serif;
+    font-size: $f3;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: $f1;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+html {
+    background: $cbg1;
+    color: $ct1;
+    font-family: 'Sofia Sans', 'Helvetica Neue', sans-serif;
+    height: 100dvh;
+    margin: auto;
+    max-width: 2560px;
+}

@@ -3,15 +3,15 @@
 .cta-button {
     border: none;
     display: flex;
-    outline: 1px solid $color-text-1a;
+    outline: 1px solid $ct1a;
     transition: outline-color .5s;
 
     &:hover {
-        outline-color: $color-text-1;
+        outline-color: $ct1;
     }
 
     a {
-        padding: $space-1 $space-2;
+        padding: $s1 $s2;
         text-transform: uppercase;
     }
 }

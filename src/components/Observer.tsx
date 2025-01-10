@@ -9,12 +9,12 @@ const options = {
     triggerOnce: false,
 };
 
-function Observer(props: { className: string, children: React.ReactNode }): React.ReactElement {
+function Observer(props: { children: React.ReactNode; className: string }): React.ReactElement {
     const { className, children } = props;
     const { inView, ref } = useInView(options);
 
     return (
-        <div className={className + (inView ? '' : ' observer')} ref={ref}>
+        <div ref={ref} className={className + (inView ? '' : ' observer')}>
             {children}
         </div>
     );

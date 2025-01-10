@@ -4,8 +4,7 @@ import '../../styles/modules/brows/Techniques.scss';
 
 function Techniques(): React.ReactElement {
     return (
-        <section className="techniques">
-        </section>
+        <section className="techniques" />
     );
 }
 

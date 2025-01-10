@@ -4,8 +4,7 @@ import '../../styles/modules/bio/Credentials.scss';
 
 function Credentials(): React.ReactElement {
     return (
-        <section className="credentials">
-        </section>
+        <section className="credentials" />
     );
 }
 

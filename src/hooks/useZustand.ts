@@ -1,12 +1,12 @@
 import { create } from 'zustand';
 
-const initialize: ZustandState = {
-    openHamburger: false,
+const init: ZustandState = {
+    hamburger: false,
 };
 
 const useZustand = create<ZustandActions & ZustandState>(set => ({
-    ...initialize,
-    setOpenHamburger: () => set(s => ({ openHamburger: !(s.openHamburger) })),
+    ...init,
+    setHamburger: () => set(s => ({ hamburger: !(s.hamburger) })),
 }));
 
 export default useZustand;

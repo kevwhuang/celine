@@ -4,8 +4,7 @@ import '../../styles/modules/brows/Experience.scss';
 
 function Experience(): React.ReactElement {
     return (
-        <section className="experience">
-        </section>
+        <section className="experience" />
     );
 }
 

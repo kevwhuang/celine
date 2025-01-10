@@ -6,12 +6,12 @@
         url('../../../assets/images/home-hero.webp');
     background-position-y: 40%;
     background-size: cover;
-    color: $color-text-2;
+    color: $ct2;
     height: clamp(760px, 45vw, 1000px);
     transition: background-position 1s;
 
     &--container {
-        margin-left: $space-4;
+        margin-left: $s4;
         position: relative;
         top: 50%;
         translate: 0 -50%;
@@ -19,15 +19,15 @@
     }
 
     &__location {
-        margin-bottom: $space-1;
+        margin-bottom: $s1;
     }
 
     &__header {
-        margin-bottom: $space-2;
+        margin-bottom: $s2;
     }
 
     &__description {
-        margin-bottom: $space-3;
+        margin-bottom: $s3;
 
         p {
             font-size: 20px;
@@ -38,14 +38,14 @@
         width: max-content;
 
         .cta-anchor {
-            color: $color-text-2a;
+            color: $ct2a;
 
             &:visited {
-                color: $color-text-2a;
+                color: $ct2a;
             }
 
             &:hover {
-                color: $color-text-2;
+                color: $ct2;
             }
 
             span {

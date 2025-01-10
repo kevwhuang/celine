@@ -1,9 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 import '../styles/components/CTAButton.scss';
 
-function Anchor(props: { href: string, text: string }): React.ReactElement {
+function Anchor(props: { href: string; text: string }): React.ReactElement {
     const { href, text } = props;
 
     return (

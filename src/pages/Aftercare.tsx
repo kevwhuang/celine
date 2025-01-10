@@ -1,14 +1,13 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+
+import '../styles/pages/Aftercare.scss';
 
 function Aftercare(): React.ReactElement {
     scroll(0, 0);
 
     return (
         <main id="aftercare">
-            <Helmet>
-                <title>Aftercare | Celine's Beauty Studio</title>
-            </Helmet>
+            <title>Aftercare | Celine's Beauty Studio</title>
         </main>
     );
 }

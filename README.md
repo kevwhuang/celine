@@ -1,7 +1,5 @@
 # Celine's Beauty Studio
 
-Contributors: Kevin Huang, Ana Lee
+Authors: Kevin Huang, Ana Lee
 
-Version: 0.2.0
-
-Date: August 8, 2024
+Version: 25.1.10

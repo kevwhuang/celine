@@ -1,7 +1,7 @@
 @use '../_root' as *;
 
 .banner {
-    background: $color-bg-1;
+    background: $cbg1;
     display: grid;
     grid-template-columns: 1fr max-content;
 
@@ -9,22 +9,22 @@
         p {
             animation: fade-in-out 5s;
             opacity: 0;
-            padding: 12px $space-3;
+            padding: 12px $s3;
             text-align: center;
         }
     }
 
     &__close {
         align-self: center;
-        color: $color-text-1;
+        color: $ct1;
         cursor: pointer;
         display: flex;
         padding: calc(27px / 2) 0;
 
         svg {
-            height: $font-1;
-            margin: 0 $space-1;
-            width: $font-1;
+            height: $f1;
+            margin: 0 $s1;
+            width: $f1;
         }
     }
 }

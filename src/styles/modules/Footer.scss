@@ -1,16 +1,16 @@
 @use '../_root' as *;
 
 .footer {
-    background: $color-bg-2;
+    background: $cbg2;
     display: grid;
     gap: 25px 100px;
     grid-template-areas: 'resources location contact' 'resources hours info';
     grid-template-columns: max-content max-content 1fr;
-    padding: 100px $space-3 $space-3;
+    padding: 100px $s3 $s3;
     transition: column-gap 1s;
 
     h5 {
-        margin-bottom: $space-1;
+        margin-bottom: $s1;
         text-transform: none;
     }
 
@@ -25,7 +25,7 @@
         }
 
         &--gutter {
-            height: $font-2;
+            height: $f2;
             padding: 4px 0;
         }
     }
@@ -65,11 +65,11 @@
         }
 
         >a {
-            color: $color-text-1;
+            color: $ct1;
             padding: 4px 0;
 
             &:visited {
-                color: $color-text-1;
+                color: $ct1;
             }
         }
 

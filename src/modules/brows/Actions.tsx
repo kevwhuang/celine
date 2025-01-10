@@ -4,8 +4,7 @@ import '../../styles/modules/brows/Actions.scss';
 
 function Actions(): React.ReactElement {
     return (
-        <section className="actions">
-        </section>
+        <section className="actions" />
     );
 }
 

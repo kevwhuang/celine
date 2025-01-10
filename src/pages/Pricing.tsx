@@ -1,14 +1,13 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+
+import '../styles/pages/Pricing.scss';
 
 function Pricing(): React.ReactElement {
     scroll(0, 0);
 
     return (
         <main id="pricing">
-            <Helmet>
-                <title>Pricing | Celine's Beauty Studio</title>
-            </Helmet>
+            <title>Pricing | Celine's Beauty Studio</title>
         </main>
     );
 }

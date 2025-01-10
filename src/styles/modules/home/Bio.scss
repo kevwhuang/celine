@@ -2,9 +2,9 @@
 
 #home .bio {
     display: grid;
-    gap: $space-3;
+    gap: $s3;
     grid-template-columns: 9fr 16fr;
-    padding: $space-vertical 0 $space-vertical $space-3;
+    padding: $sv 0 $sv $s3;
 
     &--container {
         align-self: end;
@@ -15,18 +15,18 @@
 
     &__header {
         h2 {
-            margin-bottom: $space-2;
+            margin-bottom: $s2;
         }
     }
 
     &__text {
         p {
             &:first-child {
-                margin-bottom: $space-2;
+                margin-bottom: $s2;
             }
 
             &:last-child {
-                margin-bottom: $space-3;
+                margin-bottom: $s3;
             }
         }
     }

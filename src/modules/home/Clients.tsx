@@ -4,8 +4,7 @@ import '../../styles/modules/home/Clients.scss';
 
 function Clients(): React.ReactElement {
     return (
-        <section className="clients">
-        </section>
+        <section className="clients" />
     );
 }
 

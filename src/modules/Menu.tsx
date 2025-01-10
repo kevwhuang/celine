@@ -1,16 +1,16 @@
 import React from 'react';
 
 import useZustand from '../hooks/useZustand';
+
 import '../styles/modules/Menu.scss';
 
 function Menu(): React.ReactElement {
-    const openHamburger = useZustand(s => s.openHamburger);
-    const setOpenHamburger = useZustand(s => s.setOpenHamburger);
+    const hamburger = useZustand(s => s.hamburger);
+    const setHamburger = useZustand(s => s.setHamburger);
 
-    if (!openHamburger) return <></>;
+    if (!hamburger) return <></>;
     return (
-        <section className="menu" onClick={setOpenHamburger}>
-        </section>
+        <section className="menu" onClick={setHamburger} />
     );
 }
 
