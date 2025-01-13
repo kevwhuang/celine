@@ -3,11 +3,16 @@ import React from 'react';
 
 import '../styles/components/CTAButton.scss';
 
-function Anchor(props: { href: string; text: string }): React.ReactElement {
+interface Props {
+    readonly href: string;
+    readonly text: string;
+}
+
+function Anchor(props: Props): React.ReactElement {
     const { href, text } = props;
 
     return (
-        <button className="cta-button">
+        <button className="cta-button" type="button">
             <Link to={href}>{text}</Link>
         </button>
     );

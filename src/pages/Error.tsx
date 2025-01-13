@@ -13,7 +13,6 @@ function Error(): React.ReactElement {
                 <div className="error__header">
                     <h1>Error</h1>
                 </div>
-
             </section>
         </main>
     );

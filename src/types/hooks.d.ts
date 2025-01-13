@@ -1,7 +1,7 @@
 interface ZustandActions {
-    setHamburger: () => void;
+    setIsHamburger: () => void;
 }
 
 interface ZustandState {
-    hamburger: boolean;
+    isHamburger: boolean;
 }

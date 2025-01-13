@@ -1,12 +1,12 @@
 import { create } from 'zustand';
 
 const init: ZustandState = {
-    hamburger: false,
+    isHamburger: false,
 };
 
 const useZustand = create<ZustandActions & ZustandState>(set => ({
     ...init,
-    setHamburger: () => set(s => ({ hamburger: !(s.hamburger) })),
+    setIsHamburger: () => set(s => ({ isHamburger: !(s.isHamburger) })),
 }));
 
 export default useZustand;

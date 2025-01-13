@@ -26,7 +26,13 @@ function Footer(): React.ReactElement {
 
             <div className="footer__location">
                 <h5>Location</h5>
-                <p dangerouslySetInnerHTML={{ __html: texts.footerLocation }} />
+
+                <p>
+                    7960 Silverton Ave, Unit 209
+                    <br />
+                    San Diego, CA 92126
+                </p>
+
                 <CTAAnchor href={links.directions} text="Get Directions" />
             </div>
 
@@ -94,7 +100,17 @@ function Footer(): React.ReactElement {
             </div>
 
             <div className="footer__info">
-                <p dangerouslySetInnerHTML={{ __html: texts.footerInfo }} />
+                <p>
+                    Designed by Ana ✨
+                    {' '}
+                    <span>/</span>
+                    {' '}
+                    All Rights Reserved
+                    {' '}
+                    <span>/</span>
+                    {' '}
+                    Celine's Beauty Studio 2024
+                </p>
             </div>
         </footer>
     );

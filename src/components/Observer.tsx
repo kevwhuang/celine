@@ -3,15 +3,20 @@ import { useInView } from 'react-intersection-observer';
 
 import '../styles/components/Observer.scss';
 
-const options = {
+interface Props {
+    readonly children: React.ReactNode;
+    readonly className: string;
+}
+
+const config = {
     delay: 1000,
     threshold: 0,
     triggerOnce: false,
 };
 
-function Observer(props: { children: React.ReactNode; className: string }): React.ReactElement {
+function Observer(props: Props): React.ReactElement {
     const { className, children } = props;
-    const { inView, ref } = useInView(options);
+    const { inView, ref } = useInView(config);
 
     return (
         <div ref={ref} className={className + (inView ? '' : ' observer')}>

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../styles/pages/FAQ.scss';
+import '../styles/pages/Faq.scss';
 
-function FAQ(): React.ReactElement {
+function Faq(): React.ReactElement {
     scroll(0, 0);
 
     return (
@@ -12,4 +12,4 @@ function FAQ(): React.ReactElement {
     );
 }
 
-export default FAQ;
+export default Faq;

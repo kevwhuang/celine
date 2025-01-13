@@ -34,13 +34,13 @@ function Menu2(): React.ReactElement {
 }
 
 function Navbar(): React.ReactElement {
-    const hamburger = useZustand(s => s.hamburger);
-    const setHamburger = useZustand(s => s.setHamburger);
-    const [openMenu1, setOpenMenu1] = React.useState(false);
-    const [openMenu2, setOpenMenu2] = React.useState(false);
+    const isHamburger = useZustand(s => s.isHamburger);
+    const setIsHamburger = useZustand(s => s.setIsHamburger);
+    const [isOpenMenu1, setIsOpenMenu1] = React.useState(false);
+    const [isOpenMenu2, setIsOpenMenu2] = React.useState(false);
 
     return (
-        <Headroom disable={hamburger} pinStart={43}>
+        <Headroom disable={isHamburger} pinStart={43}>
             <nav className="navbar">
                 <div className="navbar__logo">
                     <Link to="/">
@@ -49,24 +49,24 @@ function Navbar(): React.ReactElement {
                 </div>
 
                 <div className="navbar__pages">
-                    <div onMouseLeave={() => setOpenMenu1(false)}>
-                        <a onMouseEnter={() => setOpenMenu1(true)}>
+                    <div onMouseLeave={() => setIsOpenMenu1(false)}>
+                        <a onMouseEnter={() => setIsOpenMenu1(true)}>
                             Services & Pricing
                             <IconArrowDown />
                         </a>
 
-                        {openMenu1 && <Menu1 />}
+                        {isOpenMenu1 ? <Menu1 /> : null}
                     </div>
 
                     <Link to="portfolio">Portfolio</Link>
 
-                    <div onMouseLeave={() => setOpenMenu2(false)}>
-                        <a onMouseEnter={() => setOpenMenu2(true)}>
+                    <div onMouseLeave={() => setIsOpenMenu2(false)}>
+                        <a onMouseEnter={() => setIsOpenMenu2(true)}>
                             Getting Ready
                             <IconArrowDown />
                         </a>
 
-                        {openMenu2 && <Menu2 />}
+                        {isOpenMenu2 ? <Menu2 /> : null}
                     </div>
 
                     <Link to="aftercare">Aftercare</Link>
@@ -83,8 +83,8 @@ function Navbar(): React.ReactElement {
                         label="Menu"
                         rounded
                         size={48}
-                        toggle={setHamburger}
-                        toggled={hamburger}
+                        toggle={setIsHamburger}
+                        toggled={isHamburger}
                     />
                 </div>
             </nav>

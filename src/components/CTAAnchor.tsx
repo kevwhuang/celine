@@ -5,7 +5,12 @@ import IconArrowRight from './icons/IconArrowRight';
 
 import '../styles/components/CTAAnchor.scss';
 
-function Anchor(props: { href: string; text: string }): React.ReactElement {
+interface Props {
+    readonly href: string;
+    readonly text: string;
+}
+
+function Anchor(props: Props): React.ReactElement {
     const { href, text } = props;
 
     return (

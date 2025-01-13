@@ -5,12 +5,11 @@ import useZustand from '../hooks/useZustand';
 import '../styles/modules/Menu.scss';
 
 function Menu(): React.ReactElement {
-    const hamburger = useZustand(s => s.hamburger);
-    const setHamburger = useZustand(s => s.setHamburger);
+    const isHamburger = useZustand(s => s.isHamburger);
+    const setIsHamburger = useZustand(s => s.setIsHamburger);
 
-    if (!hamburger) return <></>;
     return (
-        <section className="menu" onClick={setHamburger} />
+        <section className="menu" hidden={!isHamburger} onClick={setIsHamburger} />
     );
 }
 

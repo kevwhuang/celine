@@ -2,8 +2,6 @@ import React from 'react';
 
 import IconActionClose from '../components/icons/IconActionClose';
 
-import texts from '../assets/texts/texts.json';
-
 import '../styles/modules/Banner.scss';
 
 function Banner(): React.ReactElement {
@@ -23,8 +21,27 @@ function Banner(): React.ReactElement {
     return (
         <section ref={ref} className="banner">
             <div className="banner__text">
-                {text === 0 && <p dangerouslySetInnerHTML={{ __html: texts.banner1 }} />}
-                {text === 1 && <p dangerouslySetInnerHTML={{ __html: texts.banner2 }} />}
+                {
+                    text === 0 &&
+                    <p>
+                        Lip and Brow Bundle:
+                        {' '}
+                        <b>Save $250</b>
+                        {' '}
+                        by getting your lips and brows done in the same session
+                    </p>
+                }
+
+                {
+                    text === 1 &&
+                    <p>
+                        Saline Tattoo Removal Bundle:
+                        {' '}
+                        <b>Save $50</b>
+                        {' '}
+                        by committing to 3 sessions
+                    </p>
+                }
             </div>
 
             <div className="banner__close" onClick={() => handleClose(ref)}>

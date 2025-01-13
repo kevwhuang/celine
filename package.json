@@ -1,6 +1,6 @@
 {
     "name": "celine",
-    "version": "25.1.10",
+    "version": "25.1.13",
     "author": "Kevin Huang",
     "scripts": {
         "build": "vite build",
@@ -10,12 +10,12 @@
     "dependencies": {
         "@iconify/react": "latest",
         "hamburger-react": "latest",
+        "react": "latest",
         "react-dom": "latest",
         "react-headroom": "latest",
         "react-intersection-observer": "latest",
         "react-router-dom": "latest",
         "react-router-hash-link": "latest",
-        "react": "latest",
         "zustand": "latest"
     },
     "devDependencies": {
@@ -23,18 +23,18 @@
         "@testing-library/jest-dom": "latest",
         "@testing-library/react": "latest",
         "@types/bun": "latest",
+        "@types/react": "latest",
         "@types/react-dom": "latest",
         "@types/react-headroom": "latest",
         "@types/react-router-dom": "latest",
         "@types/react-router-hash-link": "latest",
-        "@types/react": "latest",
         "@vitejs/plugin-react-swc": "latest",
         "autoprefixer": "latest",
         "eslint": "latest",
         "jsdom": "latest",
         "sass": "latest",
         "typescript": "latest",
-        "vite-plugin-pwa": "latest",
-        "vite": "latest"
+        "vite": "latest",
+        "vite-plugin-pwa": "latest"
     }
 }

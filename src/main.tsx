@@ -13,7 +13,7 @@ import Brows from './pages/Brows';
 import Display from './layouts/Display';
 import Disqualifications from './pages/Disqualifications';
 import Error from './pages/Error';
-import FAQ from './pages/FAQ';
+import Faq from './pages/Faq';
 import Home from './pages/Home';
 import Lips from './pages/Lips';
 import Policy from './pages/Policy';
@@ -37,7 +37,7 @@ const router = createBrowserRouter(createRoutesFromElements(
         <Route element={<Brows />} path="brows" />
         <Route element={<Disqualifications />} path="disqualifications" />
         <Route element={<Error />} path="error" />
-        <Route element={<FAQ />} path="faq" />
+        <Route element={<Faq />} path="faq" />
         <Route element={<Home />} index />
         <Route element={<Lips />} path="lips" />
         <Route element={<Policy />} path="policy" />
