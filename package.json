@@ -1,6 +1,6 @@
 {
     "name": "celine",
-    "version": "25.1.13",
+    "version": "25.1.14",
     "author": "Kevin Huang",
     "scripts": {
         "build": "vite build",

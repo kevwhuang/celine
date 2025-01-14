@@ -15,7 +15,7 @@ const config = {
 };
 
 function Observer(props: Props): React.ReactElement {
-    const { className, children } = props;
+    const { children, className } = props;
     const { inView, ref } = useInView(config);
 
     return (

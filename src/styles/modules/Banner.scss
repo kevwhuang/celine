@@ -4,12 +4,13 @@
     background: $cbg1;
     display: grid;
     grid-template-columns: 1fr max-content;
+    margin-left: $f4;
 
     &__text {
         p {
             animation: fade-in-out 5s;
             opacity: 0;
-            padding: 12px $s3;
+            padding: 12px 0;
             text-align: center;
         }
     }

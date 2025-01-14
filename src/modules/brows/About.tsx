@@ -3,7 +3,7 @@ import React from 'react';
 import CTAAnchor from '../../components/CTAAnchor';
 import Observer from '../../components/Observer';
 
-import image from '../../assets/images/brows-about.webp';
+import image from '../../assets/images/brows_about.webp';
 import texts from '../../assets/texts/texts.json';
 
 import '../../styles/modules/brows/About.scss';

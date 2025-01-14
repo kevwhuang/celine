@@ -4,7 +4,10 @@
     background: $cbg2;
     display: grid;
     gap: 25px 100px;
-    grid-template-areas: 'resources location contact' 'resources hours info';
+    grid-template-areas:
+        'resources location contact'
+        'resources hours info'
+    ;
     grid-template-columns: max-content max-content 1fr;
     padding: 100px $s3 $s3;
     transition: column-gap 1s;

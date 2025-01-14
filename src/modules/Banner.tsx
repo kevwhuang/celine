@@ -14,8 +14,8 @@ function Banner(): React.ReactElement {
     const [text, setText] = React.useState(0);
 
     React.useEffect(() => {
-        const id = setInterval(() => setText(text === 0 ? 1 : 0), 5000);
-        return () => clearInterval(id);
+        const key = setInterval(() => setText(text === 0 ? 1 : 0), 5000);
+        return () => clearInterval(key);
     });
 
     return (

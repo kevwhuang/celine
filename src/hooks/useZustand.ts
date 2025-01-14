@@ -6,7 +6,7 @@ const init: ZustandState = {
 
 const useZustand = create<ZustandActions & ZustandState>(set => ({
     ...init,
-    setIsHamburger: () => set(s => ({ isHamburger: !(s.isHamburger) })),
+    setIsHamburger: () => set(e => ({ isHamburger: !e.isHamburger })),
 }));
 
 export default useZustand;

@@ -13,7 +13,6 @@ function Unknown(): React.ReactElement {
                 <div className="unknown__header">
                     <h1>Unknown</h1>
                 </div>
-
             </section>
         </main>
     );

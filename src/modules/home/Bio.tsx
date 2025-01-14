@@ -3,7 +3,7 @@ import React from 'react';
 import CTAAnchor from '../../components/CTAAnchor';
 import Observer from '../../components/Observer';
 
-import image from '../../assets/images/home-bio.webp';
+import image from '../../assets/images/home_bio.webp';
 import texts from '../../assets/texts/texts.json';
 
 import '../../styles/modules/home/Bio.scss';

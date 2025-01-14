@@ -3,11 +3,11 @@
 #home .hero {
     background-image:
         linear-gradient(to right, #0000008f, transparent),
-        url('../../../assets/images/home-hero.webp');
+        url('../../../assets/images/home_hero.webp');
     background-position-y: 40%;
     background-size: cover;
     color: $ct2;
-    height: clamp(760px, 45vw, 1000px);
+    height: clamp(760px, 45dvw, 1000px);
     transition: background-position 1s;
 
     &--container {

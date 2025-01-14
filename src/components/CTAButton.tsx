@@ -8,7 +8,7 @@ interface Props {
     readonly text: string;
 }
 
-function Anchor(props: Props): React.ReactElement {
+function CTAButton(props: Props): React.ReactElement {
     const { href, text } = props;
 
     return (
@@ -18,4 +18,4 @@ function Anchor(props: Props): React.ReactElement {
     );
 }
 
-export default Anchor;
+export default CTAButton;
