@@ -1,6 +1,6 @@
 {
     "name": "celine",
-    "version": "25.1.14",
+    "version": "25.1.24",
     "author": "Kevin Huang",
     "scripts": {
         "build": "vite build",
@@ -20,20 +20,14 @@
     },
     "devDependencies": {
         "@aephonics/config": "latest",
-        "@testing-library/jest-dom": "latest",
-        "@testing-library/react": "latest",
-        "@types/bun": "latest",
-        "@types/react": "latest",
         "@types/react-dom": "latest",
         "@types/react-headroom": "latest",
         "@types/react-router-dom": "latest",
         "@types/react-router-hash-link": "latest",
         "@vitejs/plugin-react-swc": "latest",
         "autoprefixer": "latest",
-        "eslint": "latest",
         "jsdom": "latest",
         "sass": "latest",
-        "typescript": "latest",
         "vite": "latest",
         "vite-plugin-pwa": "latest"
     }

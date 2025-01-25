@@ -36,27 +36,27 @@ div {
 }
 
 h1 {
-    font-family: Trirong, Garamond, serif;
+    font-family: trirong, garamond, serif;
     font-size: $f4;
     font-weight: 600;
     line-height: $f4;
 }
 
 h2 {
-    font-family: Trirong, Garamond, serif;
+    font-family: trirong, garamond, serif;
     font-size: $f3;
     font-weight: 500;
     line-height: $f3;
 }
 
 h3 {
-    font-family: Trirong, Garamond, serif;
+    font-family: trirong, garamond, serif;
     font-size: $f2;
     font-weight: 400;
 }
 
 h4 {
-    font-family: Trirong, Garamond, serif;
+    font-family: trirong, garamond, serif;
     font-size: $f3;
     font-weight: 300;
 }
@@ -70,8 +70,6 @@ h5 {
 html {
     background: $cbg1;
     color: $ct1;
-    font-family: 'Sofia Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'sofia sans', 'helvetica neue', sans-serif;
     height: 100dvh;
-    margin: auto;
-    max-width: 2560px;
 }

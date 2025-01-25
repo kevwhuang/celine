@@ -19,7 +19,7 @@ const manifest: Partial<ManifestOptions> = {
             src: '/icons/pwa-512x512.png',
             type: 'image/png',
         }, {
-            purpose: 'any maskable',
+            purpose: 'maskable',
             sizes: '512x512',
             src: '/icons/pwa-512x512.png',
             type: 'image/png',
@@ -44,14 +44,8 @@ const pwa: Partial<VitePWAOptions> = {
 
 const vite = defineConfig({
     appType: 'spa',
-    build: {
-        outDir: 'dist',
-    },
-    css: {
-        postcss: {
-            plugins: [autoprefixer as any],
-        },
-    },
+    build: { outDir: 'dist' },
+    css: { postcss: { plugins: [autoprefixer as any] } },
     envPrefix: 'VITE_',
     plugins: [
         react(),
@@ -59,9 +53,7 @@ const vite = defineConfig({
     ],
     publicDir: 'public',
     root: process.cwd(),
-    server: {
-        port: 3000,
-    },
+    server: { port: 3000 },
 });
 
 export default vite;
