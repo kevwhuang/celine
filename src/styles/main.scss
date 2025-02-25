@@ -73,3 +73,13 @@ html {
     font-family: 'sofia sans', 'helvetica neue', sans-serif;
     height: 100dvh;
 }
+
+svg {
+    path {
+        fill: currentColor;
+
+        &:hover {
+            fill: currentColor;
+        }
+    }
+}
